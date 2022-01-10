@@ -8,21 +8,21 @@ using System.Threading.Tasks;
 
 namespace website.Models
 {
-    public class Product
+    public class Pro
     {
         [Key]
         public int Id{ get; set; }
         [MaxLength (150)]
-        public int Name{ get; set; }
+        public string Name{ get; set; }
         [MaxLength(50)]
-        public int Price { get; set; }
+        public string Price { get; set; }
         [MaxLength(50)]
-        public int DiscountPrice { get; set; }
+        public string DiscountPrice { get; set; }
         [MaxLength(200)]
-        public int Img { get; set; }
+        public string Img { get; set; }
         [NotMapped]
         public  IFormFile ImageFile{ get; set; }
-        [MaxLength(50)]
-        public int CreateDate { get; set; }
+       
+        public DateTime CreateDate { get; set; }
     }
 }
